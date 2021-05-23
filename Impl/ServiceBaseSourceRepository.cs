@@ -27,7 +27,7 @@ using thZero.Configuration;
 
 namespace thZero.Services
 {
-    public abstract class ServiceBaseSourceRepository<TService>: ServiceLoggableBase<TService>, IServiceSourceRepository
+    public abstract class ServiceBaseSourceRepository<TService>: ServiceBase<TService>, IServiceSourceRepository
     {
         public ServiceBaseSourceRepository(IOptions<SourceRepository> config, ILogger<TService> logger) : base(logger)
         {
